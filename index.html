@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Bracathon Analytics Dashboard</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
+	<!-- Your custom styles (optional) -->
+	<link href="css/style.css" rel="stylesheet">
+	<style>
+		.card_date {
+			padding: 20px !important;
+		}
+
+		.spacer {
+			margin-top: 15px !important;
+		}
+
+		.white_text {
+			color: #ffffff;
+		}
+
+		.percent_down {
+			font-size: 28px !important;
+		}
+
+		.title_grad {
+			font-size: 19px !important;
+			color: green;
+		}
+
+		.dec_size {
+			font-size: 10px !important;
+		}
+
+		.fw {
+			width: 100% !important;
+			height: 100% !important;
+		}
+
+		.large {
+			font-size: 50px !important;
+		}
+	</style>
+</head>
+
+<body>
+	<!--Navbar -->
+	<nav class="mb-1 navbar navbar-expand-lg navbar-dark primary-color sticky-top">
+		<a class="navbar-brand" href="#"><img
+				src="https://static.youthop.com/uploads/sites/2/2019/06/bracathon-logo.png" width="120px"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+			aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Upload Data</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Download Data</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
+						<i class="fas fa-user"></i> Rafat Hossain </a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info"
+						aria-labelledby="navbarDropdownMenuLink-4">
+						<a class="dropdown-item" href="#">My account</a>
+						<a class="dropdown-item" href="#">Log out</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--/.Navbar -->
+
+	<br>
+
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-sm-4 text-center mb-2">
+				<button type="button" class="btn purple-gradient waves-effect fw">
+					<i class="fas fa-graduation-cap large"></i><br>
+					<h6 class="mt-2"><b>Graduation Program Success Predictibility</b></h6>
+					<p class="percent_down"><b>70% <i class="fas fa-long-arrow-alt-down percent_down"></i></b></p>
+					<small>Updated just now</small><br>
+					<small>19th July 2019 5:17 PM</small>
+				</button>
+			</div>
+			<div class="col text-center mb-2">
+				<button type="button" class="btn btn-outline-secondary waves-effect fw">
+					<i class="fas fa-clinic-medical large"></i><br>
+					<h6 class="mt-3"><b>Hygene</b></h6>
+				</button>
+			</div>
+
+			<div class="col text-center mb-2">
+				<button type="button" class="btn btn-outline-success waves-effect fw">
+					<i class="fas fa-water large"></i><br>
+					<h6 class="mt-3"><b>Flood</b></h6>
+				</button>
+			</div>
+
+			<div class="col text-center mb-2">
+				<button type="button" class="btn btn-outline-info waves-effect fw">
+					<i class="fas fa-restroom large"></i><br>
+					<h6 class="mt-3"><b>Washroom</b></h6>
+				</button>
+			</div>
+
+			<div class="col text-center mb-2">
+				<button type="button" class="btn btn-outline-warning waves-effect fw">
+					<i class="fas fa-hat-wizard large"></i><br>
+					<h6 class="mt-3"><b>Others</b></h6>
+				</button>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row text-center mt-3">
+			<div class="col-sm-4 text-center mb-3">
+				<button type="button" class="btn btn-outline-deep-purple btn-rounded waves-effect fw">
+					<i class="fas fa-glass-whiskey large"></i><br>
+					<h4 class="mt-2"><b>Title</b></h4>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+			<div class="col text-center mb-3">
+				<button type="button" class="btn btn-deep-purple btn-rounded waves-effect fw">
+					<h6 class="mt-2"><b>Coaching</b></h6>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<button type="button" class="btn btn-deep-purple btn-rounded waves-effect fw">
+					<h6 class="mt-2"><b>Savings</b></h6>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<button type="button" class="btn btn-deep-purple btn-rounded waves-effect fw">
+					<h6 class="mt-2"><b>Sustainability</b></h6>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row text-center mt-3">
+			<div class="col-sm-4 text-center mb-3">
+				<button type="button" class="btn btn-outline-success btn-rounded waves-effect fw">
+					<i class="fas fa-keyboard large"></i><br>
+					<h4 class="mt-2"><b>Data collection keyword</b></h4>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+			<div class="col text-center mb-3">
+				<button type="button" class="btn btn-success btn-rounded waves-effect fw">
+					<h6 class="mt-2"><b>X</b></h6>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<button type="button" class="btn btn-success btn-rounded waves-effect fw">
+					<h6 class="mt-2"><b>Y</b></h6>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<button type="button" class="btn btn-success btn-rounded waves-effect fw">
+					<h6 class="mt-2"><b>Z</b></h6>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row text-center mt-3">
+			<div class="col-sm-4 text-center mb-3">
+				<button type="button" class="btn btn-outline-warning btn-rounded waves-effect fw">
+					<i class="fas fa-money-bill-wave large"></i><br>
+					<h4 class="mt-2"><b>Loan</b></h4>
+					<small>Some texts can be here</small>
+				</button>
+			</div>
+			<div class="col text-center mb-3">
+				<table class="table table-bordered mt-1 btn-outline-red" style="width: 100%; height: 100%">
+					<thead>
+						<tr>
+							<th class="align-middle" colspan="2">
+								<h4><b>Negative</b></h4>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="align-middle">
+								<h5>Male (%)</h5>
+							</td>
+							<td class="align-middle">
+								<h5>Female (%)</h5>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="col text-center mb-3">
+				<table class="table table-bordered mt-1 btn-outline-green" style="width: 100%; height: 100%">
+					<thead>
+						<tr>
+							<th class="align-middle" colspan="2">
+								<h4><b>Positive</b></h4>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="align-middle">
+								<h5>Male (%)</h5>
+							</td>
+							<td class="align-middle">
+								<h5>Female (%)</h5>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row text-center mt-3">
+			<div class="col text-center mb-3">
+				<!--Deep-purple-->
+				<button type="button" class="btn btn-deep-purple fw">Deep-purple</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<!--Indigo-->
+				<button type="button" class="btn btn-indigo fw">Indigo</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<!--Light blue-->
+				<button type="button" class="btn btn-light-blue fw">Light blue</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<!--Dark-green-->
+				<button type="button" class="btn btn-dark-green fw">Dark-green</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<!--Yellow-->
+				<button type="button" class="btn btn-yellow fw">Yellow</button>
+			</div>
+
+			<div class="col text-center mb-3">
+				<!--Deep-orange-->
+				<button type="button" class="btn btn-deep-orange fw">Deep-orange</button>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row text-center mt-3">
+			<div class="col text-center mb-3">
+				<canvas id="myChart"></canvas>
+			</div>
+
+			<div class="col text-center mb-3">
+				<canvas id="scatterChart"></canvas>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="row text-center mt-3">
+			<div class="col text-center mb-3">
+				<canvas id="horizontalBar"></canvas>
+			</div>
+
+			<div class="col text-center mb-3">
+				<canvas id="pieChart"></canvas>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer class="page-footer font-small blue mt-5">
+
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+			<a href="https://mdbootstrap.com/education/bootstrap/"> Team Name</a>
+		</div>
+		<!-- Copyright -->
+
+	</footer>
+	<!-- Footer -->
+	<!-- SCRIPTS -->
+	<!-- JQuery -->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="js/mdb.min.js"></script>
+	<script>
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+				datasets: [{
+					label: '# of Votes',
+					data: [12, 19, 3, 5, 2, 3],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)',
+						'rgba(75, 192, 192, 0.2)',
+						'rgba(153, 102, 255, 0.2)',
+						'rgba(255, 159, 64, 0.2)'
+					],
+					borderColor: [
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)',
+						'rgba(75, 192, 192, 1)',
+						'rgba(153, 102, 255, 1)',
+						'rgba(255, 159, 64, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+
+		var ctxSc = document.getElementById('scatterChart').getContext('2d');
+		var scatterData = {
+			datasets: [{
+				borderColor: 'rgba(99,0,125, .2)',
+				backgroundColor: 'rgba(99,0,125, .5)',
+				label: 'V(node2)',
+				data: [{
+					x: 1,
+					y: -1.711e-2,
+				}, {
+					x: 1.26,
+					y: -2.708e-2,
+				}, {
+					x: 1.58,
+					y: -4.285e-2,
+				}, {
+					x: 2.0,
+					y: -6.772e-2,
+				}, {
+					x: 2.51,
+					y: -1.068e-1,
+				}, {
+					x: 3.16,
+					y: -1.681e-1,
+				}, {
+					x: 3.98,
+					y: -2.635e-1,
+				}, {
+					x: 5.01,
+					y: -4.106e-1,
+				}, {
+					x: 6.31,
+					y: -6.339e-1,
+				}, {
+					x: 7.94,
+					y: -9.659e-1,
+				}, {
+					x: 10.00,
+					y: -1.445,
+				}, {
+					x: 12.6,
+					y: -2.110,
+				}, {
+					x: 15.8,
+					y: -2.992,
+				}, {
+					x: 20.0,
+					y: -4.102,
+				}, {
+					x: 25.1,
+					y: -5.429,
+				}, {
+					x: 31.6,
+					y: -6.944,
+				}, {
+					x: 39.8,
+					y: -8.607,
+				}, {
+					x: 50.1,
+					y: -1.038e1,
+				}, {
+					x: 63.1,
+					y: -1.223e1,
+				}, {
+					x: 79.4,
+					y: -1.413e1,
+				}, {
+					x: 100.00,
+					y: -1.607e1,
+				}, {
+					x: 126,
+					y: -1.803e1,
+				}, {
+					x: 158,
+					y: -2e1,
+				}, {
+					x: 200,
+					y: -2.199e1,
+				}, {
+					x: 251,
+					y: -2.398e1,
+				}, {
+					x: 316,
+					y: -2.597e1,
+				}, {
+					x: 398,
+					y: -2.797e1,
+				}, {
+					x: 501,
+					y: -2.996e1,
+				}, {
+					x: 631,
+					y: -3.196e1,
+				}, {
+					x: 794,
+					y: -3.396e1,
+				}, {
+					x: 1000,
+					y: -3.596e1,
+				}]
+			}]
+		}
+
+		var config1 = new Chart.Scatter(ctxSc, {
+			data: scatterData,
+			options: {
+				title: {
+					display: true,
+					text: 'Scatter Chart - Logarithmic X-Axis'
+				},
+				scales: {
+					xAxes: [{
+						type: 'logarithmic',
+						position: 'bottom',
+						ticks: {
+							userCallback: function (tick) {
+								var remain = tick / (Math.pow(10, Math.floor(Chart.helpers.log10(tick))));
+								if (remain === 1 || remain === 2 || remain === 5) {
+									return tick.toString() + 'Hz';
+								}
+								return '';
+							},
+						},
+						scaleLabel: {
+							labelString: 'Frequency',
+							display: true,
+						}
+					}],
+					yAxes: [{
+						type: 'linear',
+						ticks: {
+							userCallback: function (tick) {
+								return tick.toString() + 'dB';
+							}
+						},
+						scaleLabel: {
+							labelString: 'Voltage',
+							display: true
+						}
+					}]
+				}
+			}
+		});
+
+		new Chart(document.getElementById("horizontalBar"), {
+			"type": "horizontalBar",
+			"data": {
+				"labels": ["Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey"],
+				"datasets": [{
+					"label": "My First Dataset",
+					"data": [22, 33, 55, 12, 86, 23, 14],
+					"fill": false,
+					"backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
+						"rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(54, 162, 235, 0.2)",
+						"rgba(153, 102, 255, 0.2)", "rgba(201, 203, 207, 0.2)"
+					],
+					"borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+						"rgb(75, 192, 192)", "rgb(54, 162, 235)", "rgb(153, 102, 255)",
+						"rgb(201, 203, 207)"
+					],
+					"borderWidth": 1
+				}]
+			},
+			"options": {
+				"scales": {
+					"xAxes": [{
+						"ticks": {
+							"beginAtZero": true
+						}
+					}]
+				}
+			}
+		});
+
+		//pie
+		var ctxP = document.getElementById("pieChart").getContext('2d');
+		var myPieChart = new Chart(ctxP, {
+			type: 'pie',
+			data: {
+				labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+				datasets: [{
+					data: [300, 50, 100, 40, 120],
+					backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+					hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+				}]
+			},
+			options: {
+				responsive: true
+			}
+		});
+	</script>
+</body>
+
+</html>
