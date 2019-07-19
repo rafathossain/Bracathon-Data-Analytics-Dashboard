@@ -95,7 +95,7 @@
 	<div class="container-fluid">
 		<div class="row text-center">
 			<div class="col-sm-4 text-center mb-2">
-				<button type="button" class="btn purple-gradient waves-effect fw">
+				<button type="button" class="btn pink waves-effect fw" style="color: white">
 					<i class="fas fa-graduation-cap large"></i><br>
 					<small>Area : Manikganj | Zone : 4 | Family : 10</small>
 					<h6 class="mt-2"><b>Graduation Program Success Predictibility</b></h6>
@@ -596,26 +596,29 @@
 					<small>Some texts can be here</small>
 				</button>
 			</div>
+
 			<div class="col text-center mb-3">
-				<table class="table table-bordered mt-1 btn-outline-red" style="width: 100%; height: 100%">
-					<thead>
-						<tr>
-							<th class="align-middle" colspan="2">
-								<h4><b>Negative (45%)</b></h4>
-							</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="align-middle">
-								<h5>Male (60%)</h5>
-							</td>
-							<td class="align-middle">
-								<h5>Female (40%)</h5>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+				<a href="#!" data-toggle="modal" data-target="#negative">
+					<table class="table table-bordered mt-1 btn-outline-red" style="width: 100%; height: 100%">
+						<thead>
+							<tr>
+								<th class="align-middle" colspan="2">
+									<h4><b>Negative (45%)</b></h4>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="align-middle">
+									<h5>Male (60%)</h5>
+								</td>
+								<td class="align-middle">
+									<h5>Female (40%)</h5>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</a>
 			</div>
 
 			<div class="col text-center mb-3">
@@ -638,6 +641,139 @@
 						</tr>
 					</tbody>
 				</table>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="negative" tabindex="-1" role="dialog" aria-labelledby="negative" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="negative">Negative Analysis</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-sm-12">
+								<table class="table table-striped mb-0" style="width: 100%; border: 1px solid #000000">
+									<thead class="black white-text">
+										<th colspan="3">
+											<h3 class="mb-0 text-center" style="padding: 15px;">
+												<b>
+													Sector : Livestock (Cow)<br>
+													Data Parameter : Coaching & Health
+												</b>
+											</h3>
+										</th>
+									</thead>
+									<tbody>
+										<tr>
+											<td style="border: 1px solid #000000">Area : Manikganj</td>
+											<td style="border: 1px solid #000000">Zone : 4</td>
+											<td style="border: 1px solid #000000">Family : 10</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-sm-12">
+								<table class="table">
+									<tbody>
+										<tr style="border: 1px solid black">
+											<td class="text-center" style="width: 50%;">
+
+												<img src="img/icon/ic1.png" width="70px" />
+												<br>
+												<p style="font-size: 22px">
+													<b>60%</b>
+													<br>
+													Coaching
+												</p>
+
+											</td>
+
+											<td class="text-center" style="background: #999999ff; width: 50%">
+
+												<img src="img/icon/ic22.png" width="70px" />
+												<br>
+												<p style="font-size: 22px">
+													<b>40%</b>
+													<br>
+													Health
+												</p>
+
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-sm-12 col-md-12 mb-5">
+								<table class="table">
+									<thead>
+										<tr class="text-center">
+											<th class="black white-text" colspan="3" style="border: 1px solid black">
+												<h3>Health Analysis</h3>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="text-center">
+											<td style="background: lightgreen">
+												<img src="img/icon/ic10.png" width="60px" />
+												<br>
+												<p style="font-size: 22px">
+													<b>30%</b>
+													<br>
+													Healthy
+												</p>
+											</td>
+											<td style="background: lightcoral">
+												<img src="img/icon/ic10.png" width="60px" />
+												<br>
+												<p style="font-size: 22px">
+													<b>70%</b>
+													<br>
+													Sick
+												</p>
+											</td>
+										</tr>
+										<tr class="text-center">
+											<td colspan="2" style="border: 1px solid black">
+												<h5>Respiratory Disease- 40%</h5>
+											</td>
+										</tr>
+										<tr class="text-center">
+											<td colspan="2" style="border: 1px solid black">
+												<h5>Bovine Viral Diarrhea- 40%</h5>
+											</td>
+										</tr>
+										<tr class="text-center">
+											<td colspan="2" style="border: 1px solid black">
+												<h5>Blackleg- 40%</h5>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col-sm-12 col-md-12 mb-5">
+								<canvas id="barChartssss"></canvas>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-12 col-md-12 mb-5">
+								<canvas id="horizontalBarsw"></canvas>
+							</div>
+							<div class="col-sm-12 col-md-12 mb-5">
+								<canvas id="barChartsw"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -887,7 +1023,8 @@
 						position: 'bottom',
 						ticks: {
 							userCallback: function (tick) {
-								var remain = tick / (Math.pow(10, Math.floor(Chart.helpers.log10(tick))));
+								var remain = tick / (Math.pow(10, Math.floor(Chart.helpers.log10(
+									tick))));
 								if (remain === 1 || remain === 2 || remain === 5) {
 									return tick.toString() + 'Hz';
 								}
@@ -1032,6 +1169,104 @@
 			}
 		});
 	</script>
+
+	<script>
+		//bar
+		var ctxB = document.getElementById("barChartssss").getContext('2d');
+		var myBarChart = new Chart(ctxB, {
+			type: 'bar',
+			data: {
+				labels: ["Man (20 to 40)", "Woman (20 to 40)", "Woman (41 to 60+)"],
+				datasets: [{
+					label: 'Affected Stakeholders',
+					data: [30, 40, 30],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
+						'rgba(255, 206, 86, 0.2)'
+					],
+					borderColor: [
+						'rgba(255,99,132,1)',
+						'rgba(54, 162, 235, 1)',
+						'rgba(255, 206, 86, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				}
+			}
+		});
+	</script>
+
+<script>
+        new Chart(document.getElementById("horizontalBarsw"), {
+            "type": "horizontalBar",
+            "data": {
+                "labels": ["Communication", "Trainer", "Training Miss", "Training Module"],
+                "datasets": [{
+                    "label": "Coaching Analysis",
+                    "data": [30, 40, 10, 20],
+                    "fill": false,
+                    "backgroundColor": ["rgba(255, 99, 132, 0.2)", "rgba(255, 159, 64, 0.2)",
+                        "rgba(255, 205, 86, 0.2)", "rgba(75, 192, 192, 0.2)"
+                    ],
+                    "borderColor": ["rgb(255, 99, 132)", "rgb(255, 159, 64)", "rgb(255, 205, 86)",
+                        "rgb(75, 192, 192)"
+                    ],
+                    "borderWidth": 1
+                }]
+            },
+            "options": {
+                "scales": {
+                    "xAxes": [{
+                        "ticks": {
+                            "beginAtZero": true
+                        }
+                    }]
+                }
+            }
+        });
+
+        //bar
+        var ctxB = document.getElementById("barChartsw").getContext('2d');
+        var myBarChart = new Chart(ctxB, {
+            type: 'bar',
+            data: {
+                labels: ["Man (20 to 40)", "Woman (20 to 40)", "Woman (41 to 60+)"],
+                datasets: [{
+                    label: 'Affected Stakeholders',
+                    data: [40, 10, 50],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
